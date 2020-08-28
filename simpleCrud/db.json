@@ -1,0 +1,46 @@
+{
+  "clients": [
+    {
+      "name": "Orbis",
+      "phone": "Vvff",
+      "email": "Rggsh",
+      "enterprise": "Hfgfhg",
+      "id": 3
+    },
+    {
+      "name": "Orbis",
+      "phone": "Vvff",
+      "email": "Rggsh",
+      "enterprise": "Hfgfhg",
+      "id": 4
+    },
+    {
+      "name": "Ok",
+      "phone": "Hhgg",
+      "email": "Vghg",
+      "enterprise": "Mi empresa",
+      "id": 5
+    },
+    {
+      "name": "Orbis",
+      "phone": "Oj ",
+      "email": "Ievsjajvj",
+      "enterprise": "Ok",
+      "id": 7
+    },
+    {
+      "name": "Orbis Alonzo Gutierrez",
+      "phone": "8295678908",
+      "email": "orbisalonzo@gmail.com",
+      "enterprise": "DevTeams",
+      "id": 8
+    },
+    {
+      "name": "Shamira ",
+      "phone": "8094567898",
+      "email": "Orbis@gmail.com",
+      "enterprise": "Muy bien",
+      "id": 9
+    }
+  ]
+}
