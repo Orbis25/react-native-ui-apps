@@ -11,18 +11,6 @@ import * as Notifications from "expo-notifications";
 import * as Permission from "expo-permissions";
 import Constants from "expo-constants";
 
-const getToken = async () => {
-  const { status } = await Permission.getAsync(Permission.NOTIFICATIONS);
-  if (status !== "granted") {
-    return;
-  }
-
-  const token = await Notifications.getExpoPushTokenAsync();
-  console.log("token es :" + token);
-  alert(token);
-  return token;
-};
-
 async function registerForPushNotificationsAsync() {
   let token;
   if (Constants.isDevice) {
@@ -60,12 +48,14 @@ async function registerForPushNotificationsAsync() {
 
 export default function App() {
   useEffect(() => {
-    registerForPushNotificationsAsync();
+    (async () => {
+      registerForPushNotificationsAsync();
+    })();
   }, []);
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <TouchableOpacity style={{ backgroundColor: "blue", marginTop: 20 }}>
+      <TouchableOpacity  style={{ backgroundColor: "blue", marginTop: 20 }}>
         <Text
           style={{ margin: 10, width: 200, textAlign: "center", color: "#fff" }}
         >
